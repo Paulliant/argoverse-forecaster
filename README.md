@@ -5,9 +5,18 @@ This project is developed as part of the Python Programming course for the 2023 
 ## Methodology
 
 ### Baseline
+<<<<<<< HEAD
  **Time Regression Prediction**
  **Feature Extraction**
  - Iterative Regression Prediction
  - VectorNet Feature Embedding
 
 The project involves using advanced techniques to enhance trajectory prediction, showcasing the importance of both classical and deep learning-based feature extraction methods.
+=======
+1. **Time Regression Prediction**
+   - **Feature Extraction**
+     - Iterative Regression Prediction
+     - VectorNet Feature Embedding
+
+The project involves using advanced techniques to enhance trajectory prediction, showcasing the importance of both classical and deep learning-based feature extraction methods.
+>>>>>>> 2a62dc9 (VectorNet merged)

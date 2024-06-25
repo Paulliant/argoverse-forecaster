@@ -48,11 +48,9 @@ def get_nearest_obstacle(df):
         distances[index] = np.inf
         
         # 更新NEAREST_OBSTACLE值
-        nearest_distance = distances.min()
-        if np.isinf(nearest_distance):
+        df.at[index, 'NEAREST_OBSTACLE'] = distances.min()
+        if np.isinf(df.at[index, 'NEAREST_OBSTACLE']):
             df.at[index, 'NEAREST_OBSTACLE'] = 0
-        else:
-            df.at[index, 'NEAREST_OBSTACLE'] = nearest_distance
     
     return df
 
@@ -81,9 +79,6 @@ def get_feature(init_df: pd.DataFrame) -> pd.DataFrame:
 
     # 获取最近障碍物的信息
     df = get_nearest_obstacle(df)
-
-    # 确保所有NaN值都被填充
-    df.fillna(df.mean(), inplace=True)
 
     return df
 

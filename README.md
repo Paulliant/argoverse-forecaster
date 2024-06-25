@@ -3,6 +3,7 @@
 This project is developed as part of the Python Programming course for the 2023 semester. It addresses the problem of trajectory prediction by proposing a feature extraction-based approach. By optimizing traditional regression models and incorporating neural network features, this project demonstrates the superiority of algorithms that rely on meaningful, manually extracted features.
 
 Team Name: LocationMind
+
 Team Member: 19210121-陈铭豪
 
 ## Methodology

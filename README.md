@@ -16,7 +16,7 @@ Please refer to [**code.ipynb**](code.ipynb) for implementation details.
 
 The VectorNet module utilizes a reimplementation available [**here**](https://github.com/Liang-ZX/VectorNet). To prepare for using VectorNet:
 
-1. Install the Argoverse API by following the instructions at [Argoverse GitHub repository](https://github.com/argoverse/argoverse-api).
+1. Install the Argoverse API by following the instructions at [**Argoverse GitHub repository**](https://github.com/argoverse/argoverse-api).
 2. Ensure that the HD map data is placed in the specified location as per the Argoverse API documentation.
 
 **Setup and Training:**

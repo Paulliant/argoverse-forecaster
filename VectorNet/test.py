@@ -74,7 +74,7 @@ def main():
         device = torch.device('cpu')
     print(device)
     cfg = dict(device=device, last_observe=20, batch_size=1, predict_step=29, # last_observe=30, batch_size=1, predict_step=19,
-               data_locate="data", save_path="./model_ckpt/inference/",
+               data_locate="../data", save_path="./model_ckpt/inference/",
                model_path="./model_ckpt/model_final.pth")
 
     pp = pprint.PrettyPrinter(indent=4)
@@ -87,7 +87,7 @@ def main():
     argo_dst = ArgoverseForecastDataset(cfg)
     val_loader = DataLoader(dataset=argo_dst, batch_size=cfg['batch_size'], shuffle=True, num_workers=0, drop_last=True)
 
-    model = VectorNet(traj_features=4, map_features=8, cfg=cfg)
+    model = VectorNet(traj_features=15, map_features=8, cfg=cfg)
     model.to(device)
 
     # load from checkpoint
@@ -140,7 +140,11 @@ def inference(model, cfg, val_loader):
 def evaluate(dataset, predictions, labels):
     loss_list = []
     pred_coordinate = dict()
-    for key in predictions:
+    for i in predictions:
+        key = str(i)
+        print(dataset.city_name)
+        if key not in dataset.city_name:
+            continue
         city_name = dataset.city_name[key]
         max_coordinate = dataset.axis_range[city_name]['max']
         min_coordinate = dataset.axis_range[city_name]['min']

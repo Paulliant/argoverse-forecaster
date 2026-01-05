@@ -6,6 +6,11 @@ Team Name: LocationMind
 
 Team Member: 19210121-陈铭豪
 
+## Reference
+
+Please check the details in
+[**Motion Prediction for Autonomous Vehicles Based on Feature Extraction**](Motion Prediction for Autonomous Vehicles Based on Feature Extraction.pdf)
+
 ## Methodology
 
 ### Iterative Regression Prediction

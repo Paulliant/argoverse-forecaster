@@ -9,7 +9,7 @@ Team Member: 19210121-陈铭豪
 ## Reference
 
 Please check the details in
-[**motion_prediction_feature_extraction.pdf**](motion_prediction_feature_extraction.pdf.pdf)
+[**motion_prediction_feature_extraction.pdf**](motion_prediction_feature_extraction.pdf)
 
 ## Methodology
 
